@@ -12,6 +12,7 @@ Or tap once and use short names:
 
 ```bash
 brew tap getguruhat/tap
+brew trust getguruhat/tap   # Homebrew 7+ only loads short names from trusted taps
 brew install --cask ai-meter cliphat pcmode
 ```
 
