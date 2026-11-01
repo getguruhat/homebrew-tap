@@ -31,7 +31,8 @@ cask "pcmode" do
     #{token} is not notarized by Apple. If macOS blocks the first launch, open
     System Settings > Privacy & Security and click "Open Anyway".
 
-    PC Mode needs Accessibility access to remap shortcuts. Grant it in
-    System Settings > Privacy & Security > Accessibility.
+    PC Mode needs Accessibility and Input Monitoring access to remap shortcuts.
+    Grant both in System Settings > Privacy & Security (on macOS 27, Accessibility
+    is called Device Control and Data Access). Help: https://guruhat.com/apps/pcmode/help/
   EOS
 end
