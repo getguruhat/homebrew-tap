@@ -1,6 +1,6 @@
 cask "ai-meter" do
-  version "1.6.0"
-  sha256 "f036f2534499cd7433a4df0043faed7bd29573ae13356f94e4c94427b0a96c05"
+  version "1.6.1"
+  sha256 "a0bcb843e0ad4d3082904c9942772e034ed7b452461e6051291599ccdcb6a74c"
 
   url "https://github.com/getguruhat/ai-meter/releases/download/v#{version}/AI-Meter-#{version}-Installer.dmg"
   name "AI Meter"
