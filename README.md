@@ -6,6 +6,7 @@ Free, open-source Mac apps from [GuruHat](https://guruhat.com), installable with
 brew install --cask getguruhat/tap/ai-meter   # Claude Code / Codex usage in the menu bar
 brew install --cask getguruhat/tap/cliphat    # Clipboard history
 brew install --cask getguruhat/tap/pcmode     # Windows-style shortcuts on macOS
+brew install --cask getguruhat/tap/serverhat  # Local dev servers in the menu bar
 ```
 
 Or tap once and use short names:
@@ -13,7 +14,7 @@ Or tap once and use short names:
 ```bash
 brew tap getguruhat/tap
 brew trust getguruhat/tap   # Homebrew 7+ only loads short names from trusted taps
-brew install --cask ai-meter cliphat pcmode
+brew install --cask ai-meter cliphat pcmode serverhat
 ```
 
 Upgrade with `brew upgrade --cask`. Remove an app with `brew uninstall --cask <name>`,
@@ -24,6 +25,7 @@ or `brew uninstall --zap --cask <name>` to also delete its settings and data.
 | `ai-meter` | AI Meter     | [getguruhat/ai-meter](https://github.com/getguruhat/ai-meter)    |
 | `cliphat`  | ClipHat      | [getguruhat/cliphat-macos](https://github.com/getguruhat/cliphat-macos) |
 | `pcmode`   | PC Mode      | [getguruhat/PCMode](https://github.com/getguruhat/PCMode)        |
+| `serverhat` | ServerHat   | [getguruhat/serverhat-macos](https://github.com/getguruhat/serverhat-macos) |
 
 Requirements: macOS 13 Ventura or later on Apple silicon.
 
