@@ -18,6 +18,13 @@ cask "mame4mac-slim" do
 
   app "MAME4mac-slim.app"
 
+  # Unsigned, not notarized build: clear the download quarantine flag so it opens without the Gatekeeper block.
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/MAME4mac-slim.app"],
+                   must_succeed: false
+  end
+
   uninstall quit: "com.getguruhat.mame4ios"
 
   # ROMs and saves live in ~/Documents (roms, cfg, nvram, ...) and are never removed.
@@ -29,8 +36,9 @@ cask "mame4mac-slim" do
 
   caveats <<~EOS
     #{token} is an unofficial, unsigned slim build of MAME4mac for Apple silicon.
-    It is not notarized by Apple. If macOS blocks the first launch, right-click the app
-    and choose Open, or use System Settings > Privacy & Security > Open Anyway.
+    It is not notarized by Apple, so this cask removes the download quarantine flag after
+    install so the app opens. If macOS still blocks it, right-click the app and choose Open,
+    or use System Settings > Privacy & Security > Open Anyway.
 
     Only the drivers listed in keep-drivers.flt are built in, and no ROMs are included.
     Put your own ROMs in ~/Documents/roms.
