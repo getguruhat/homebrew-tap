@@ -19,10 +19,12 @@ cask "mame4mac-slim" do
   app "MAME4mac-slim.app"
 
   # Unsigned, not notarized build: clear the download quarantine flag so it opens without the Gatekeeper block.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/MAME4mac-slim.app"],
-                   must_succeed: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-dr", "com.apple.quarantine", "MAME4mac-slim.app"],
+        base:         :appdir,
+        chdir:        "/Applications",
+        must_succeed: false
   end
 
   uninstall quit: "com.getguruhat.mame4ios"
