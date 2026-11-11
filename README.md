@@ -7,6 +7,7 @@ brew install --cask getguruhat/tap/ai-meter   # Claude Code / Codex usage in the
 brew install --cask getguruhat/tap/cliphat    # Clipboard history
 brew install --cask getguruhat/tap/pcmode     # Windows-style shortcuts on macOS
 brew install --cask getguruhat/tap/serverhat  # Local dev servers in the menu bar
+brew install --cask getguruhat/tap/tocapad    # Trackpad edges for volume and brightness
 brew install --cask getguruhat/tap/mame4mac-slim  # Slim MAME arcade emulator (your own ROMs)
 ```
 
@@ -15,7 +16,7 @@ Or tap once and use short names:
 ```bash
 brew tap getguruhat/tap
 brew trust getguruhat/tap   # Homebrew 7+ only loads short names from trusted taps
-brew install --cask ai-meter cliphat pcmode serverhat mame4mac-slim
+brew install --cask ai-meter cliphat pcmode serverhat tocapad mame4mac-slim
 ```
 
 Upgrade with `brew upgrade --cask`. Remove an app with `brew uninstall --cask <name>`,
@@ -27,6 +28,7 @@ or `brew uninstall --zap --cask <name>` to also delete its settings and data.
 | `cliphat`  | ClipHat      | [getguruhat/cliphat-macos](https://github.com/getguruhat/cliphat-macos) |
 | `pcmode`   | PC Mode      | [getguruhat/PCMode](https://github.com/getguruhat/PCMode)        |
 | `serverhat` | ServerHat   | [getguruhat/serverhat-macos](https://github.com/getguruhat/serverhat-macos) |
+| `tocapad`  | TocaPad      | [getguruhat/tocapad-macos](https://github.com/getguruhat/tocapad-macos) |
 | `mame4mac-slim` | MAME4mac Slim | [getguruhat/MAME4iOS](https://github.com/getguruhat/MAME4iOS) (fork of ToddLa/MAME4iOS) |
 
 Requirements: macOS 13 Ventura or later on Apple silicon.
