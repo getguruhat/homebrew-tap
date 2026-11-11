@@ -1,6 +1,6 @@
 cask "tocapad" do
-  version "0.1.2"
-  sha256 "6ffb6c16904b98c724525546f15f404b83c0db16e589c36800635279aa6accb2"
+  version "0.1.3"
+  sha256 "919c32551e9951e624f5b356ac5a4aca0d761f69f24a0c0b59b5901d0e15fa4b"
 
   url "https://github.com/getguruhat/tocapad-macos/releases/download/v#{version}/TocaPad-#{version}-Installer.dmg"
   name "TocaPad"
