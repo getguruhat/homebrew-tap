@@ -1,6 +1,6 @@
 cask "pcmode" do
-  version "1.4.1"
-  sha256 "8262ea63abd46ea01fa3b2e2a6c114aac17b48bbf283f15e793c7ab4d469a554"
+  version "1.5.0"
+  sha256 "166f971b884c39a779ffba9f9510c715818bb8bc0b7940f0005327c0327e2229"
 
   url "https://github.com/getguruhat/PCMode/releases/download/v#{version}/PCMode-Installer.dmg"
   name "PC Mode"
