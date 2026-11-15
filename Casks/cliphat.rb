@@ -1,6 +1,6 @@
 cask "cliphat" do
-  version "1.0.2"
-  sha256 "31cfc8e2f5c3e97b963d5a8f85103997c7be42d03c5ac89dad23247265b090f0"
+  version "1.0.3"
+  sha256 "c36f0bece3cafd1b6f58e77e99770efbc6cf1cae61b4751cc9cada927a7571c6"
 
   url "https://github.com/getguruhat/cliphat-macos/releases/download/v#{version}/ClipHat-#{version}-install.dmg"
   name "ClipHat"
