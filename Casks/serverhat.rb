@@ -1,6 +1,6 @@
 cask "serverhat" do
-  version "0.3.1"
-  sha256 "5290a1b7f4b1f6ee7469f112d4acd9fb08fd2595f0bd7574e02c996084cbb7f8"
+  version "0.3.2"
+  sha256 "e3c87ba764b7ddfadf9caa586234bfd01198b8ccdba9f40e6b634507a0eaad55"
 
   url "https://github.com/getguruhat/serverhat-macos/releases/download/v#{version}/ServerHat-#{version}-Installer.dmg"
   name "ServerHat"
